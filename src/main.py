@@ -57,7 +57,7 @@ class MyService(Service):
                 ),
             ],
             has_ai=False,
-            docs_url="https://docs.swiss-ai-center.ch/reference/services/image-resize/",
+            docs_url="https://docs.swiss-ai-center.ch/reference/services/image-rotate/",
         )
         self._logger = get_logger(settings)
 
