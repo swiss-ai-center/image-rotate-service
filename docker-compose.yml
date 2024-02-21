@@ -1,6 +1,5 @@
 services:
   service:
-    container_name: image-rotate-service
     build:
       context: .
       dockerfile: development.Dockerfile
