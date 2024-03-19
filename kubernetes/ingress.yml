@@ -3,8 +3,7 @@ kind: Ingress
 metadata:
   name: my-service-ingress
   annotations:
-    nginx.ingress.kubernetes.io/proxy-body-size: "16m"
-    nginx.org/client-max-body-size: "16m"
+    cert-manager.io/issuer: "letsencrypt"
 spec:
   rules:
   - host: my-service.example.com
@@ -20,3 +19,4 @@ spec:
   tls:
     - hosts:
         - my-service.example.com
+      secretName: my-service-example-com-tls-cert
