@@ -177,7 +177,7 @@ jobs:
           engine-announce-retry-delay: ${{ env.PROD_ENGINE_ANNOUNCE_RETRY_DELAY }}
 
       - name: Remove unnecessary keys from configuration files
-        uses: swiss-ai-center/common-code/.github/actions/remove-unnecessary-keys-from-kubernetes-configuration-files@mai
+        uses: swiss-ai-center/common-code/.github/actions/remove-unnecessary-keys-from-kubernetes-configuration-files@main
         with:
           configuration-files-location: ./kubernetes
 
