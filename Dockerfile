@@ -26,9 +26,8 @@ ENV ENGINE_ANNOUNCE_RETRY_DELAY=${ENGINE_ANNOUNCE_RETRY_DELAY}
 
 # Exposed ports
 EXPOSE 80
-ENTRYPOINT ["uv", "run"]
 # Switch to src directory
 WORKDIR "/app/src"
-
+ENTRYPOINT ["uv", "run"]
 # Command to run on start
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
