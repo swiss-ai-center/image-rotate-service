@@ -26,7 +26,7 @@ ENV ENGINE_ANNOUNCE_RETRY_DELAY=${ENGINE_ANNOUNCE_RETRY_DELAY}
 
 # Exposed ports
 EXPOSE 80
-
+ENTRYPOINT ["uv", "run"]
 # Switch to src directory
 WORKDIR "/app/src"
 
